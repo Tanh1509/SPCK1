@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiện Bakery</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="topbar">
+        <p onclick="send()"> Thiện Anh Bakery </p>
+    </div>
+    <div class="bar">
+        <p>
+            <img src="https://file.hstatic.net/1000075078/file/vector_706a88566eab4f009bed6eea93cd890b.png" alt="">
+            154 Cửa hàng khắp cả nước
+        </p>
+        <p>
+            <img src="https://file.hstatic.net/1000075078/file/group_8de276faa50c486b9d485826c506803b.png" alt="">
+            Đặt hàng: 1800.3817
+        </p>
+        <p>
+            <img src="https://file.hstatic.net/1000075078/file/vector_c337310f409d440f890b370ff9cefe44.png" alt="">
+            Freeship từ 50.000vnd
+        </p>
+        <p>
+            <i style="color: orange;" class="fa-solid fa-envelope"></i>
+            info@ThienBakery
+
+        </p>
+    </div>
+    <div class="container">
+        <div class="logo-search">
+            <table style="margin: auto;">
+                <tr>
+                    <td>
+                        <img onclick="send()" class="logo"
+                            src="https://www.freelogoservices.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kh...WCrRZMkBzFwXs1M3EMoAJtlicqhPNv8Pk9"
+                            alt="Trần Thiện Anh Bakery">
+
+                    </td>
+                    <td>
+                        <input id="timkiem" type="text" placeholder="Tìm kiếm sản phẩm">
+                    </td>
+                    <td>
+                        <span class="search"><i class="fa-solid fa-magnifying-glass"></i> </span>
+                    </td>
+                    <td>
+                        <table style="margin-top: 25px;margin-left: 150px;cursor: pointer;">
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    Giỏ hàng
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+
+                    </td>
+                    <td>
+                        <table style="margin-left: 50px;cursor: pointer;">
+                            <tr>
+                                <td>
+                                    <i id="bars" class="fa-solid fa-bars fa-lg"></i>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+
+        </div>
+        <div id="menu-bars" class="menu-bars">
+            <div id="close" class="close">
+                <i class="fa-solid fa-arrow-right fa-lg"></i>
+            </div>
+            <ul class="menu">
+                <li>Trang chủ</li>
+                <li onclick="gioithieu()">Giới thiệu</li>
+                <li>Sản phẩm</li>
+                <li>Danh sách cửa hàng</li>
+                <li>Tin tức</li>
+                <li>Liên hệ</li>
+                <li>Tuyển dụng</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="menu2 boxshadow">
+        <ul class="menu-ul">
+            <li>Thiện Coffe</li>
+            <li>Cà phê</li>
+            <li>Trà</li>
+            <li id="dad" class="Dad"> Menu
+                <i class="fa-solid fa-caret-down"></i>
+                <div id="menu-son" class="menu-son">
+
+
+                    <ul id="menu5" class="menu5">
+                        <li class="tra" style="font-weight: bold;">
+                            Trà</li>
+                        <li>Trà trái cây</li>
+                        <li>Trà sữa</li>
+                        <li>Macchiato</li>
+                        <li>Capuchino</li>
+                        <li>Cà phê</li>
+                    </ul>
+
+                    <ul id="menu5" class="menu5">
+                        <li class="banh" style="font-weight: bold;"> Bánh kẹo</li>
+                        <li>Bánh mặn</li>
+                        <li>Bánh ngọt</li>
+                        <li>Snack</li>
+
+                    </ul>
+                    <ul id="menu5" class="menu5">
+                        <li class="tainha" style="font-weight: bold;">Tại nhà</li>
+                        <li>Cà phê tại nhà</li>
+                        <li>Trà tại nhà</li>
+
+                    </ul>
+
+
+
+                </div>
+            </li>
+
+
+
+            <li>Tâm sự</li>
+        </ul>
+        <div class="img">
+            <img class="anh83 boxshadow" src="./203.jpg" alt="">
+        </div>
+
+
+    </div>
+    <!-- cà phê hạt nguyên chất, cà phê sạch organic hoặc cà phê Specialty từ các quốc gia nổi tiếng về sản xuất cà phê như
+    Brazil, Ethiopia, Colombia, Costa Rica, Guatemala... Hãy cùng đến quán cà phê gần nhất và thưởng thức một tách cà
+    phê thơm ngon để kỷ niệm ngày lễ này nhé! -->
+
+    <div class="coffe">
+
+        <img class="coffe-image boxshadow "
+            src="https://file.hstatic.net/1000075078/file/highlight_cc022d45647d43e9bfbe1248b4573788.jpg" alt="">
+
+        <div class="hanhnhanto " onclick="hienmenu()">
+            <img class="hanhnhan boxshadow"
+                src="https://product.hstatic.net/1000075078/product/cloudfee-hanh-nhan-nuong_ba00ec49e2c141ce957f0015cc52ffe7_large.png"
+                alt="">
+
+            <h3 class="Cloudfee">CloudFee Hạnh Nhân Nướng</h3>
+            <span>49.000 đ </span>
+
+
+        </div>
+
+        <div class="suadato" onclick="hienmenu()">
+            <img class="suada boxshadow"
+                src="https://product.hstatic.net/1000075078/product/bg-tch-sua-da-no_3f754dc5ebfc49c6a73b231781dbc3d5_large.jpg"
+                alt="">
+            <h3 class="Cloudfee">The Coffee House Sữa Đá</h3>
+            <span>39.000 đ </span>
+
+        </div>
+
+    </div>
+
+    <div class="coffe2">
+        <div class="vaito" onclick="hienmenu()">
+            <img class="Vai boxshadow"
+                src="https://product.hstatic.net/1000075078/product/1669736893_hi-tea-vai_86427bfa982f48188db23833b7196f2a_large.png"
+                alt="">
+            <h3 class="teavai">Hi-Tea Vải</h3>
+            <span> 49.000 đ </span>
+
+        </div>
+        <div class="capheto" onclick="hienmenu()">
+            <img class="capheda boxshadow"
+                src="https://product.hstatic.net/1000075078/product/1669736835_ca-phe-sua-da_ec94966a51e74a089779e4b761090321_large.png"
+                alt="">
+            <h3 class="capheh">Cà phê sữa đá</h3>
+            <span style="margin-left: 25px;"> 29.000 đ </span>
+        </div>
+
+        <div class="banhmilon" onclick="hienmenu()">
+            <img src="https://product.hstatic.net/1000075078/product/1638440015_banh-mi-vietnam_02c90a5912f84a45b303eb5036b6dcb7_large.jpg"
+                alt="" class="banhmi boxshadow">
+            <h3 class="capheh">Bánh Mì VN Thịt Nguội</h3>
+            <span style="margin-left: 25px;"> 35.000 đ </span>
+
+        </div>
+        <div class="mochilon" onclick="hienmenu()">
+            <img src="https://product.hstatic.net/1000075078/product/1655348107_mochi-choco_6498979c562a466c91c61200bc86e96a_large.jpg"
+                alt="" class="mochi boxshadow">
+            <h3 class="capheh">Bánh Mì VN Thịt Nguội</h3>
+            <span style="margin-left: 25px;"> 19.000 đ </span>
+
+        </div>
+    </div>
+
+    <div class="caphehappyland">
+        <img class="caphehappy boxshadow"
+            src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-9/173217285_1426147371056638_5094237647901563018_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=p7Wk3f_MElsAX9P-sRc&_nc_ht=scontent.fhan14-2.fna&oh=00_AfBJX56Xgb8EZKr-oVaxHi87fuLs2X1CfsZChD20RuAxIw&oe=644BA93A"
+            alt="ảnh trà sữa">
+        <p>
+            Cà phê hạt nguyên chất, cà phê sạch organic hoặc cà phê Specialty từ các quốc gia nổi tiếng về sản xuất cà
+            phê như
+            Brazil, Ethiopia, Colombia, Costa Rica, Guatemala... Hãy cùng đến quán cà phê gần nhất và thưởng thức một
+            tách cà
+            phê thơm ngon để kỷ niệm ngày lễ này nhé! <br>
+            <button class="button">
+                Thử ngay
+            </button>
+        </p>
+
+    </div>
+
+    <div class="overlay" id="overlay">
+
+        <div class="baotrumluon">
+
+
+            <div class="daccap">
+                <i class="fa-solid fa-xmark fa-2x" id="fa-xmark"></i>
+                <form action="" class="fifa">
+                    <div class="border">
+                        <div class="formship">
+                            <img class="logo-ship"
+                                src="https://minio.thecoffeehouse.com/images/tch-web-order/Delivery2.png" alt="">
+                            <h3 class="ship"> Giao hàng</h3>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="ngoai">
+
+                    <input class="input" type="text" placeholder="Vui lòng nhập địa chỉ">
+                    <div class="chon">
+
+                        <div class="change-quantity decrease" id="change-quantity decrease" onclick="decrease()">
+                            -
+                        </div>
+                        <div class="amount" id="amount">
+                            1
+                        </div>
+                        <div class="change-quantity increase" onclick="increase()">
+                            +
+                        </div>
+                    </div>
+                    <div class="select">
+                        <p class="left">Chọn loại</p>
+
+                        <select class="nhietdo" name="" id="">
+                            <option value="" hidden></option>
+                            <option value="Nóng"> Nóng</option>
+                            <option value="Ấm">Ấm</option>
+                            <option value="Lạnh">Lạnh</option>
+                        </select>
+                    </div>
+
+                    <div class="customize-content">
+                        <p class="left">Chọn size</p>
+                        <div class="size">
+                            <label for=""> <input type="radio" name="size"> Size M </label>
+                            <label for=""><input type="radio" name="size"> Size L </label>
+
+                        </div>
+                    </div>
+
+                    <div class="sucre">
+                        <p class="left">Chọn đường</p>
+                        <div class="duong">
+
+                            <div class="duong1">
+
+                                <label for=""><input type="radio" name="sucre"> 70% đường </label>
+                                <label for=""><input type="radio" name="sucre"> 30% đường </label>
+                                <label for=""><input type="radio" name="sucre"> 100% đường </label>
+                            </div>
+                            <div class="duong2">
+
+                                <label for=""><input type="radio" name="sucre"> 50% đường</label>
+                                <label for=""><input type="radio" name="sucre"> Không đường</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chonda">
+                        <p class="left">Chọn đá</p>
+                        <div class="dadda">
+
+                            <div class="da">
+                                <label for=""><input type="radio" name="da"> 100% đá</label>
+                                <label for=""><input type="radio" name="da"> 50% đá</label>
+                            </div>
+                            <label for=""><input type="radio" name="da"> Không đá</label>
+                        </div>
+
+                    </div>
+
+                    <div class="topping">
+                        <p class="left">Chọn topping</p>
+                        <div class="cusomize-content">
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm trân châu đường
+                                đen
+                                <span class="giathem">+6.000đ</span>
+                            </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm đậu đỏ <span
+                                    class="giathem">+6.000đ</span> </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm đậu xanh <span
+                                    class="giathem">+6.000đ</span> </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm Macchiato <span
+                                    class="giathem">+6.000đ</span> </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm rau câu <span
+                                    class="giathem">+6.000đ</span> </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm thạch bạch tuyết
+                                <span class="giathem">+6.000đ</span>
+                            </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm Pudding <span
+                                    class="giathem">+6.000đ</span> </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm thạch dứa <span
+                                    class="giathem">+6.000đ</span> </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm hạt sen <span
+                                    class="giathem">+6.000đ</span> </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm phô mai tươi <span
+                                    class="giathem">+6.000đ</span> </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm thạch dâu tằm
+                                <span class="giathem">+6.000đ</span>
+                            </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm trân châu hoàng
+                                kim
+                                <span class="giathem">+6.000đ</span>
+                            </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm trân châu baby
+                                <span class="giathem">+6.000đ</span>
+                            </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm trân châu sợi
+                                <span class="giathem">+6.000đ</span>
+                            </div>
+                            <div class="topping-wrap"> <input type="checkbox" id="topping-them"> Thêm trân châu Sương
+                                Mai
+                                <span class="giathem">+6.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button class="chotgia">Thanh toán</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="store">
+        <div class="store-des">
+
+            <h3 class="store_slider_title">SIGNATURE<br>By The Coffee House</h3>
+            <p class="store_slider_des">Nơi giúp hạnh phúc thêm trọn vẹn,tràn đầy với hương vị cà phê đặc sản,không gian
+                cảm hứng.</p>
+            <button class="timthem">Tìm hiểu thêm</button>
+        </div>
+
+
+
+        <img class="signa"
+            src="https://file.hstatic.net/1000075078/file/sig-03_c74a0629d8b44ac580a3e9cf51fadb0a_master.png" alt="">
+    </div>
+
+    <div class="cauchuyen">
+        <div class="chuyennha">
+            <img class="coctra"
+                src="https://file.hstatic.net/1000075078/file/coffee-2_2_92db24958ff14ac4b4249b3256f7a415.png" alt="">
+            <p> Chuyện Nhà </p>
+
+        </div>
+        <h3>
+            <span class="border-left"></span> <span class="titleborder"> Cà Phê hạnh phúc </span>
+        </h3>
+        <div class="imghappy">
+            <div class="imghappydiv">
+                <img class="imgcaphehappy"
+                    src="https://file.hstatic.net/1000075078/article/3__1__2b67342f4db64bb082944cf078afd910_grande.jpg"
+                    alt="">
+                <p>
+                    20/04/2023
+                    <br>
+                    <span class="come">Hạnh phúc nhỏ từ một tách cà phê
+
+                    </span>
+                    <br>
+                    Một ngày đầu tiên ở thành phố mới, tôi cảm thấy lạc lõng và buồn chán. Tôi đến quán cà phê gần nhà
+                    để tìm hiểu thêm về văn hóa địa phương và gặp gỡ những...
+                </p>
+
+            </div>
+
+            <div class="imghappydiv">
+                <img class="imgcaphehappy"
+                    src="http://file.hstatic.net/1000075078/article/_dsc2358_5075c84b1b114f72b968dad9e9e9ceaa_grande.jpg"
+                    alt="">
+                <p>
+                    20/04/2023
+                    <br>
+                    <span class="come"> Cà phê và tình yêu đích thực
+
+                    </span>
+                    <br>
+                    Tiếng ve sầu râm ran trong không gian rộng lớn của quán cà phê, khiến họ không thể nhịn được cười,
+                    khẽ chạm nhẹ đầu gối của nhau, họ biết rằng họ đã tìm thấy nhau ....
+                </p>
+
+            </div>
+
+            <div class="imghappydiv">
+                <img class="imgcaphehappy"
+                    src="http://file.hstatic.net/1000075078/article/1__3__ec2969cff66c462d8d29959f1456bc08_grande.jpg"
+                    alt="">
+                <p>
+                    20/04/2023
+                    <br>
+                    <span class="come"> Niềm hạnh phúc từ những giọt cà phê
+
+                    </span>
+                    <br>
+                    Có một người đàn ông rất yêu cà phê. Anh ta luôn tìm kiếm loại cà phê ngon nhất để thưởng thức mỗi
+                    sáng. Mỗi khi uống ly cà phê vào buổi sáng, anh ta cảm thấy...
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

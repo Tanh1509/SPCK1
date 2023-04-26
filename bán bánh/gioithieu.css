@@ -1,0 +1,56 @@
+body {
+    background-color: #bcdee7;
+    text-align: center;
+    font: normal 14px/1.618em "Roboto", sans-serif;
+}
+
+.gioithieu {
+    border: 1px solid black;
+    display: inline-block;
+    width: 300px;
+   
+
+}
+
+.gioithieu h1 {
+    font-weight: 500;
+    font-size: 24px;
+    color: orange;
+
+}
+
+.gioithieu h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gioithieu p {
+    color: #333333;
+}
+
+.circle {
+    height: 85px;
+    width: 85px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.trong{
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.fa-brands{
+    display: inline-block;
+    color: red;
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.icon{
+    margin-bottom: 20px;
+}
